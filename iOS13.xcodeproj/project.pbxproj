@@ -13,6 +13,10 @@
 		61402B4D24C81EF2009DB9FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61402B4B24C81EF2009DB9FF /* Main.storyboard */; };
 		61402B4F24C81F10009DB9FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61402B4E24C81F10009DB9FF /* Assets.xcassets */; };
 		61402B5224C81F10009DB9FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61402B5024C81F10009DB9FF /* LaunchScreen.storyboard */; };
+		61402B5A24C82261009DB9FF /* NavigationConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61402B5924C82261009DB9FF /* NavigationConfigurationViewController.swift */; };
+		61402B5E24C8228A009DB9FF /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61402B5D24C8228A009DB9FF /* PresentationViewController.swift */; };
+		61402B6024C822EA009DB9FF /* SFSymbolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61402B5F24C822EA009DB9FF /* SFSymbolViewController.swift */; };
+		61F5FBAE24C8307C00F9E933 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F5FBAD24C8307C00F9E933 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		61402B4E24C81F10009DB9FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61402B5124C81F10009DB9FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61402B5324C81F10009DB9FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61402B5924C82261009DB9FF /* NavigationConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfigurationViewController.swift; sourceTree = "<group>"; };
+		61402B5D24C8228A009DB9FF /* PresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationViewController.swift; sourceTree = "<group>"; };
+		61402B5F24C822EA009DB9FF /* SFSymbolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolViewController.swift; sourceTree = "<group>"; };
+		61F5FBAD24C8307C00F9E933 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,33 @@
 			children = (
 				61402B4524C81EF2009DB9FF /* AppDelegate.swift */,
 				61402B4724C81EF2009DB9FF /* SceneDelegate.swift */,
-				61402B4924C81EF2009DB9FF /* ViewController.swift */,
+				61A1434324F3DA84006F967B /* Controller */,
+				61A1434724F3DAB3006F967B /* Extension */,
 				61402B4B24C81EF2009DB9FF /* Main.storyboard */,
 				61402B4E24C81F10009DB9FF /* Assets.xcassets */,
 				61402B5024C81F10009DB9FF /* LaunchScreen.storyboard */,
 				61402B5324C81F10009DB9FF /* Info.plist */,
 			);
 			path = iOS13;
+			sourceTree = "<group>";
+		};
+		61A1434324F3DA84006F967B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				61402B4924C81EF2009DB9FF /* ViewController.swift */,
+				61402B5D24C8228A009DB9FF /* PresentationViewController.swift */,
+				61402B5924C82261009DB9FF /* NavigationConfigurationViewController.swift */,
+				61402B5F24C822EA009DB9FF /* SFSymbolViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		61A1434724F3DAB3006F967B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				61F5FBAD24C8307C00F9E933 /* Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +167,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				61402B4A24C81EF2009DB9FF /* ViewController.swift in Sources */,
+				61402B5A24C82261009DB9FF /* NavigationConfigurationViewController.swift in Sources */,
+				61F5FBAE24C8307C00F9E933 /* Extension.swift in Sources */,
 				61402B4624C81EF2009DB9FF /* AppDelegate.swift in Sources */,
+				61402B6024C822EA009DB9FF /* SFSymbolViewController.swift in Sources */,
+				61402B5E24C8228A009DB9FF /* PresentationViewController.swift in Sources */,
 				61402B4824C81EF2009DB9FF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
